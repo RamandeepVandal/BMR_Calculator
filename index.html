@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weight{+-}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="primary-section" id="primary-section">
+        <nav id="page-links">
+            <ul>
+                <li id="home-link"><a id="home-link" class="navlinks" href="./index.html">Weight{+-}</a></li>
+                <li><a class="navlinks" href="#">Track</a></li>
+                <li><a class="navlinks" href="#">Register</a></li>
+                <li><a class="navlinks" href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="header">Calculate Your BMR</h1>
+
+        <form id="user-choice">
+            <label for="activity-level">Activity Level</label><br>
+            <select name="activity-level" id="activity-level">
+                <option value="1">Lightly Active</option>
+                <option value="2">Moderatly Active</option>
+                <option value="3">Very Active</option>
+                <option value="4">Extra Active</option>
+            </select><br><br>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age"><br>
+            <label for="weight">Weight(lbs)</label><br>
+            <input type="number" step="0.01" name="weight" id="weight"><br>
+            <label for="height">Height(in)</label><br>
+            <input type="number" step="0.01" name="height" id="height"><br>
+            <button type="button" id="user-btn" onclick="checkBMR()">Calculate</button>
+        </form>
+        <div class="user-values">
+            <div class="bmr-values">
+                <h4 id="bmr-header">TDEE: <span id="loss"></span></h4><br>
+                <h4 id="bmr-header">BMR: <span id="gain"></span></h4><br>
+            </div>
+            <h3 id="second-header">Calorie Deficit/Surplus</h3><br>
+            <h4 id="loss-header">Normal Weight loss: <span id="loss"></span></h4><br>
+            <h4 id="loss-header">Extreme Weight loss: <span id="loss"></span></h4><br>
+            <h4 id="gain-header">Normal Weight gain: <span id="gain"></span></h4><br>
+            <h4 id="gain-header">Extreme Weight gain: <span id="gain"></span></h4><br>
+        </div>
+    </div>
+    <script src="bmr.js" async defer></script>
+</body>
+
+</html>
