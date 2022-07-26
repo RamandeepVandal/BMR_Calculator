@@ -134,6 +134,8 @@ input {
     padding: 6px 12px;
     margin: 8px 0;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
 }
 
 select {
@@ -152,7 +154,7 @@ select, input[type="text"]{
     background-color: #6c5b7b;
     border: 3px solid;
     border-color: #6c5b7b;
-    box-shadow: 0 0 10px #6c5b7b, 0 0 40px #6c5b7b, 0 0 60px #6c5b7b;
+    box-shadow: 0 0 10px #6c5b7b, 0 0 30px #6c5b7b, 0 0 50px #6c5b7b;
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
     color: white;
@@ -166,7 +168,7 @@ select, input[type="text"]{
 #user-btn:hover {
     background-color: #8de7cd9d;
     border-color: #8de7cd9d;
-    box-shadow: 0 0 10px #8de7cd9d, 0 0 40px #8de7cd9d, 0 0 60px #8de7cd9d;
+    box-shadow: 0 0 10px #8de7cd9d, 0 0 30px #8de7cd9d, 0 0 50px #8de7cd9d;
     transform: scale(1.20);
     color: black;
 }
