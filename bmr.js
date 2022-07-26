@@ -27,9 +27,9 @@ const checkBMR = () => {
     // bmr value
     let bmr;
     if (gender === 'male') {
-        bmr = (88.362 + (13.397 * parseFloat(weight)) + (4.799 * parseFloat(height))) - (5.677 * parseFloat(age));
+        bmr = ((88.362 + (13.397 * parseFloat(weight)) + (4.799 * parseFloat(height))) - (5.677 * parseFloat(age)));
     } else {
-        bmr = (447.593 + (9.247 * parseFloat(weight)) + (3.098 * parseFloat(height))) - (4.330 * parseFloat(age));
+        bmr = ((447.593 + (9.247 * parseFloat(weight)) + (3.098 * parseFloat(height))) - (4.330 * parseFloat(age)));
     }
 
     // activity lvl
