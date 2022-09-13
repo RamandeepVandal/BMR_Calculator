@@ -1,22 +1,3 @@
-/*
-activity level and calculations
-
-    --BMR:
-    male -> bmr = 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age in years)
-    female -> bmr = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) - (4.330 x age in years)
-    
-    --activity level:
-    1 -> total = 1.2 * bmr
-    2 -> total = 1.375 * bmr
-    3 -> total = 1.55 * bmr
-    4 -> total = 1.725 * bmr
-
-    --calorie deficit, maintain, calorie surplus:
-    deficit -> total - 500;
-    maintain -> total;
-    surplus -> total + 500;
-*/
-
 const checkBMR = () => {
     let activityLvl = document.getElementById('activity-level').value;
     let age = document.getElementById('age').value;
